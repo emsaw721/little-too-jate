@@ -1,25 +1,24 @@
 {
   "name": "little-too-jate",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "## Description",
+  "main": "index.js",
   "scripts": {
-    "start:dev": "",
-    "start": "",
-    "server": "",
-    "build": "",
-    "install": "",
-    "client": ""
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emsaw721/little-too-jate.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "if-env": "^1.0.4"
+  "bugs": {
+    "url": "https://github.com/emsaw721/little-too-jate/issues"
   },
-  "devDependencies": {
-    "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
+  "homepage": "https://github.com/emsaw721/little-too-jate#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
   }
 }
