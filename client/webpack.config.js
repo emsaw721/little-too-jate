@@ -32,14 +32,14 @@ module.exports = () => {
         start_url: './',
         publicPath: './',
         icons: [{
-          src: path.resolve('/src/images/logo.png'),
+          src: path.resolve('src/images/logo.png'),
           sizes: [96, 128, 192, 256, 384, 512],
           destination: path.join('assets', 'icons'),
         }]
       }),
       new InjectManifest({
-        swSrc: './sw.js',
-        swDest: 'service-worker.js', 
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js', 
       })
     ],
 
