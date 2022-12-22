@@ -24,10 +24,11 @@
   "homepage": "https://github.com/emsaw721/little-too-jate#readme",
   "dependencies": {
     "if-env": "^1.0.4",
-    "serve": "^13.0.2"
+    "serve": "^13.0.2",
+    "webpack": "^5.75.0"
   },
   "engines": {
-    "node": "16.x"
+    "node": "^18.10.0"
   },
   "devDependencies": {
     "concurrently": "^7.0.0"
