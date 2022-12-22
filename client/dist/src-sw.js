@@ -9,13 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./sw.js":
-/*!***************!*\
-  !*** ./sw.js ***!
-  \***************/
+/***/ "./src-sw.js":
+/*!*******************!*\
+  !*** ./src-sw.js ***!
+  \*******************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("var _require = __webpack_require__(/*! workbox-recipes */ \"./node_modules/workbox-recipes/index.mjs\"),\n  warmStrategyCache = _require.warmStrategyCache;\nvar _require2 = __webpack_require__(/*! workbox-strategies */ \"./node_modules/workbox-strategies/index.mjs\"),\n  CacheFirst = _require2.CacheFirst,\n  StaleWhileRevalidate = _require2.StaleWhileRevalidate;\nvar _require3 = __webpack_require__(/*! workbox-routing */ \"./node_modules/workbox-routing/index.mjs\"),\n  registerRoute = _require3.registerRoute;\nvar _require4 = __webpack_require__(/*! workbox-cacheable-response */ \"./node_modules/workbox-cacheable-response/index.mjs\"),\n  CacheableResponsePlugin = _require4.CacheableResponsePlugin;\nvar _require5 = __webpack_require__(/*! workbox-expiration */ \"./node_modules/workbox-expiration/index.mjs\"),\n  ExpirationPlugin = _require5.ExpirationPlugin;\nvar _require6 = __webpack_require__(/*! workbox-precaching/precacheAndRoute */ \"./node_modules/workbox-precaching/precacheAndRoute.js\"),\n  precacheAndRoute = _require6.precacheAndRoute;\nprecacheAndRoute([{'revision':'467e5e14be3b87d5a52a53433a1d2775','url':'index.html'},{'revision':'6a15d0e3d4560cd4998ca57abef7d1cd','url':'install.bundle.js'},{'revision':'6ec5e960bef742c95889ee0936f2e728','url':'main.bundle.js'}]);\n// Set up page cache\nvar pageCache = new CacheFirst({\n  cacheName: 'page-cache',\n  plugins: [new CacheableResponsePlugin({\n    statuses: [0, 200]\n  }), new ExpirationPlugin({\n    maxAgeSeconds: 30 * 24 * 60 * 60\n  })]\n});\nwarmStrategyCache({\n  urls: ['/index.html', '/'],\n  strategy: pageCache\n});\nregisterRoute(function (_ref) {\n  var request = _ref.request;\n  return request.mode === 'navigate';\n}, pageCache);\n// Set up asset cache\nregisterRoute(function (_ref2) {\n  var request = _ref2.request;\n  return ['style', 'script', 'worker'].includes(request.destination);\n}, new StaleWhileRevalidate({\n  cacheName: 'asset-cache',\n  plugins: [new CacheableResponsePlugin({\n    statuses: [0, 200]\n  })]\n}));\n\n//# sourceURL=webpack://client/./sw.js?");
+eval("var _require = __webpack_require__(/*! workbox-recipes */ \"./node_modules/workbox-recipes/index.mjs\"),\n  warmStrategyCache = _require.warmStrategyCache;\nvar _require2 = __webpack_require__(/*! workbox-strategies */ \"./node_modules/workbox-strategies/index.mjs\"),\n  CacheFirst = _require2.CacheFirst,\n  StaleWhileRevalidate = _require2.StaleWhileRevalidate;\nvar _require3 = __webpack_require__(/*! workbox-routing */ \"./node_modules/workbox-routing/index.mjs\"),\n  registerRoute = _require3.registerRoute;\nvar _require4 = __webpack_require__(/*! workbox-cacheable-response */ \"./node_modules/workbox-cacheable-response/index.mjs\"),\n  CacheableResponsePlugin = _require4.CacheableResponsePlugin;\nvar _require5 = __webpack_require__(/*! workbox-expiration */ \"./node_modules/workbox-expiration/index.mjs\"),\n  ExpirationPlugin = _require5.ExpirationPlugin;\nvar _require6 = __webpack_require__(/*! workbox-precaching/precacheAndRoute */ \"./node_modules/workbox-precaching/precacheAndRoute.js\"),\n  precacheAndRoute = _require6.precacheAndRoute;\nprecacheAndRoute([{'revision':'467e5e14be3b87d5a52a53433a1d2775','url':'index.html'},{'revision':'6a15d0e3d4560cd4998ca57abef7d1cd','url':'install.bundle.js'},{'revision':'6ec5e960bef742c95889ee0936f2e728','url':'main.bundle.js'}]);\n// Set up page cache\nvar pageCache = new CacheFirst({\n  cacheName: 'page-cache',\n  plugins: [new CacheableResponsePlugin({\n    statuses: [0, 200]\n  }), new ExpirationPlugin({\n    maxAgeSeconds: 30 * 24 * 60 * 60\n  })]\n});\nwarmStrategyCache({\n  urls: ['/index.html', '/'],\n  strategy: pageCache\n});\nregisterRoute(function (_ref) {\n  var request = _ref.request;\n  return request.mode === 'navigate';\n}, pageCache);\n// Set up asset cache\nregisterRoute(function (_ref2) {\n  var request = _ref2.request;\n  return ['style', 'script', 'worker'].includes(request.destination);\n}, new StaleWhileRevalidate({\n  cacheName: 'asset-cache',\n  plugins: [new CacheableResponsePlugin({\n    statuses: [0, 200]\n  })]\n}));\n\n//# sourceURL=webpack://client/./src-sw.js?");
 
 /***/ }),
 
@@ -982,7 +982,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./sw.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src-sw.js");
 /******/ 	
 /******/ })()
 ;
