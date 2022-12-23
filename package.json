@@ -1,36 +1,20 @@
 {
-    "name": "little-too-jate",
+    "name": "J.A.T.E.",
     "version": "1.0.0",
-    "description": "## Description",
-    "main": "server.js",
+    "description": "",
     "scripts": {
-      "start:dev": "concurrently \"cd server && npm run server\"  \"cd client && npm run build\"",
+      "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
       "start": "npm run build && cd server && node server.js",
       "server": "cd server nodemon server.js --ignore client",
       "build": "cd client && npm run build",
       "install": "cd client && npm install",
       "client": "cd client && npm start"
     },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/emsaw721/little-too-jate.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/emsaw721/little-too-jate/issues"
-    },
-    "homepage": "https://github.com/emsaw721/little-too-jate#readme",
     "dependencies": {
-      "if-env": "^1.0.4",
-      "serve": "^13.0.2"
-    },
-    "engines": {
-      "node": "16.x"
+      "express": "^4.17.1"
     },
     "devDependencies": {
-      "concurrently": "^7.6.0"
+      "concurrently": "^5.2.0",
+      "nodemon": "^2.0.4"
     }
   }
-  
